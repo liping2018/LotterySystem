@@ -47,7 +47,7 @@
 			<b></b>
 		</div>
 	</div>
-	<form method="post" action="${pageContext.request.contextPath}/user/loginvalid.do" class="form-actions">
+	<form method="post" action="${pageContext.request.contextPath}/user/userlogin.do" class="form-actions">
 		<div class=" w1" id="entry">
 			<div class="mc " id="bgDiv">
 			<div id="logo">
@@ -57,7 +57,7 @@
 					<div class="item fore1">
 						<span>用户名</span>
 						<div class="item-ifo">
-							<input type="text" name="qq"  class="text"  required="required"/>
+							<input type="text" name="user.username"  class="text"  required="required"/>
 							<div class="i-name ico"></div>
 							<label id="qq_error" class="hide"><b></b></label>
 						</div>
@@ -66,21 +66,11 @@
 					<div class="item fore2">
 						<span>密码</span>
 						<div class="item-ifo">
-							<input type="password"  name="password" class="text" required="required" />
+							<input type="password"  name="user.password" class="text" required="required" />
 							<div class="i-pass ico"></div>
 							<label id="loginpwd_error" class="hide"></label>
 						</div>
-					</div>
-						<div class="item fore2">
-						<span>验证码</span>
-						<div class="item-ifo">
-							<span>
-								<input type="text"  name="validate" class="text" required="required" style="width:150px;"/>
-								<a><img src="" alt="验证码"/></a>
-							</span>
-							<label id="loginpwd_error" class="hide"></label>
-						</div>
-					</div>
+					
 						<input type="submit" value="登陆" class="submit"/>
 						<input type="reset" class="submit"/> 
 					<pre>       ${login_fail}

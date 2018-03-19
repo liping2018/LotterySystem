@@ -1,7 +1,8 @@
 package pers.liangshuyi.lotterysystem.service;
 
-import javax.xml.registry.infomodel.User;
+import java.util.List;
 
+import pers.liangshuyi.lotterysystem.po.User;
 import pers.liangshuyi.lotterysystem.web.common.Common;
 /**
  * IUserservice
@@ -10,4 +11,6 @@ import pers.liangshuyi.lotterysystem.web.common.Common;
  */
 public interface IUserSrevice extends Common<User>{
 
+	List<User> selectByNameAndPassword(User user);
+	
 }

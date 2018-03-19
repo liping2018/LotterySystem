@@ -4,6 +4,12 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
   <configuration>
   	<typeAliases>
+  		<typeAlias type="pers.liangshuyi.lotterysystem.po.User" alias="User"/>
+  		<typeAlias type="pers.liangshuyi.lotterysystem.po.Lyric" alias="Lyric"/>
+  		<typeAlias type="pers.liangshuyi.lotterysystem.po.Melody" alias="Melody"/>
+  		<typeAlias type="pers.liangshuyi.lotterysystem.po.Point" alias="Point"/>
+  		<typeAlias type="pers.liangshuyi.lotterysystem.po.Prize" alias="Prize"/>
+  		<typeAlias type="pers.liangshuyi.lotterysystem.po.Song" alias="Song"/>
   	</typeAliases>
   </configuration>
   

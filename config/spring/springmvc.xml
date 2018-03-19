@@ -13,20 +13,24 @@
 		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd 
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
-		
-		<!-- 包扫描 -->
-		<context:component-scan base-package="pers.liangshuyi.lotterysystem"></context:component-scan>
-		
-		<!-- 注解驱动  自动创建处理器映射器和处理器适配器-->
-		<mvc:annotation-driven></mvc:annotation-driven>
-		
-		<!-- 创建视图解析器 -->
-		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-			<property name="prefix" value="/WEB-INF/jsps/"></property>
-			<property name="suffix" value=".jsp"></property>
-		</bean>
-		
-		
-		
-		
+
+	<!-- 包扫描 -->
+	<context:component-scan base-package="pers.liangshuyi.lotterysystem"></context:component-scan>
+
+	<!-- 注解驱动  自动创建处理器映射器和处理器适配器-->
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<!-- 创建视图解析器 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	<mvc:resources location="/" mapping="/**/*.jsp" />
+	<mvc:resources location="/" mapping="/**/*.js" />
+	<mvc:resources location="/" mapping="/**/*.css" />
+	<mvc:resources location="/" mapping="/**/*.png" />
+	<mvc:resources location="/" mapping="/**/*.gif" />
+	<mvc:resources location="/" mapping="/**/*.jpg" />
+	<mvc:resources location="/" mapping="/**/*.jpeg" />
 </beans>

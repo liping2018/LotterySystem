@@ -23,8 +23,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form action="${pageContext.request.contextPath}/user/goto.do">
-    	<input type="text" name="gotourl"/><br/>
+    <form action="${pageContext.request.contextPath}/user/userlogin.do">
+    	<input type="text" name="username"/><br/>
+    	<input type="password" name="password"/><br/>
     	<input type="submit" value="提交"/>
     </form>
   </body>
